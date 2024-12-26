@@ -1,8 +1,11 @@
+/* Reset mặc định */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
 }
 
+/* Định dạng header */
 header {
   background-color: #f19ed9;
   color: #FFFFFF;
@@ -14,26 +17,32 @@ header nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
+  flex-wrap: wrap; /* Cho phép các item xuống dòng nếu cần */
+  justify-content: center; /* Căn giữa các mục trong menu */
   margin: 0;
 }
 
 header nav ul li {
-  margin: 10px;
+  margin: 15px;
 }
 
 header nav ul li a {
   color: #FFFFFF;
   text-decoration: none;
   display: flex;
-  align-items: center; 
+  flex-direction: column; /* Hiển thị ảnh và chữ theo chiều dọc */
+  align-items: center; /* Căn giữa hình ảnh và văn bản */
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng hover */
+}
+
+header nav ul li a:hover {
+  transform: scale(1.1); /* Phóng to khi hover */
 }
 
 header nav ul li a img {
-  width: 24px; 
+  width: 40px; /* Giới hạn kích thước hình ảnh */
   height: auto;
-  margin-right: 8px; 
+  margin-bottom: 5px; /* Khoảng cách giữa hình ảnh và văn bản */
 }
 
 main {
@@ -42,8 +51,16 @@ main {
 }
 
 main img {
-  width: 50%;
+  width: 80%; /* Hình ảnh chính ở giữa */
+  max-width: 800px; /* Giới hạn kích thước tối đa */
   height: auto;
+  border-radius: 10px; /* Bo tròn góc */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng bóng cho hình ảnh */
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng khi hover */
+}
+
+main img:hover {
+  transform: scale(1.05); /* Phóng to khi hover */
 }
 
 footer {
