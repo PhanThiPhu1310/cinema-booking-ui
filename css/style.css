@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
@@ -9,16 +10,37 @@ body {
 header {
   background-color: #f19ed9;
   color: white;
+=======
+/* Reset mặc định */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Định dạng header */
+header {
+  background-color: #f19ed9;
+  color: #FFFFFF;
+>>>>>>> 5cb26aa91400cc904641be54820f70a32bef5ca4
   text-align: center;
   padding: 20px;
 }
 
 header nav ul {
+<<<<<<< HEAD
   list-style-type: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+=======
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các item xuống dòng nếu cần */
+  justify-content: center; /* Căn giữa các mục trong menu */
+>>>>>>> 5cb26aa91400cc904641be54820f70a32bef5ca4
   margin: 0;
 }
 
@@ -27,6 +49,7 @@ header nav ul li {
 }
 
 header nav ul li a {
+<<<<<<< HEAD
   text-decoration: none;
   color: #ffffff;
   display: flex;
@@ -89,4 +112,50 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+=======
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column; /* Hiển thị ảnh và chữ theo chiều dọc */
+  align-items: center; /* Căn giữa hình ảnh và văn bản */
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng hover */
+}
+
+header nav ul li a:hover {
+  transform: scale(1.1); /* Phóng to khi hover */
+}
+
+header nav ul li a img {
+  width: 40px; /* Giới hạn kích thước hình ảnh */
+  height: auto;
+  margin-bottom: 5px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+main img {
+  width: 80%; /* Hình ảnh chính ở giữa */
+  max-width: 800px; /* Giới hạn kích thước tối đa */
+  height: auto;
+  border-radius: 10px; /* Bo tròn góc */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng bóng cho hình ảnh */
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng khi hover */
+}
+
+main img:hover {
+  transform: scale(1.05); /* Phóng to khi hover */
+}
+
+footer {
+  background-color: #f19ed9;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+>>>>>>> 5cb26aa91400cc904641be54820f70a32bef5ca4
 }
