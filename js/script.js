@@ -1,24 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const modal = document.getElementById('modal');
-  const modalImage = document.getElementById('modalImage');
-  const caption = document.getElementById('caption');
-  const close = document.querySelector('.close');
+// Get modal elements
+const modal = document.getElementById("modal");
+const modalImage = document.getElementById("modalImage");
+const captionText = document.getElementById("caption");
+const closeModal = document.querySelector(".close");
 
-  document.querySelectorAll('.gallery-item img').forEach(image => {
-    image.addEventListener('click', () => {
-      modal.style.display = 'block';
-      modalImage.src = image.src;
-      caption.innerText = image.alt;
-    });
-  });
+// Get all images in the gallery
+const galleryItems = document.querySelectorAll(".gallery-item");
 
-  close.addEventListener('click', () => {
-    modal.style.display = 'none';
+// Add click event for each gallery image
+galleryItems.forEach((item) => {
+  item.addEventListener("click", function () {
+    modal.style.display = "block";
+    modalImage.src = this.src;
+    captionText.textContent = this.alt;
   });
+});
 
-  window.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.style.display = 'none';
-    }
-  });
+// Close the modal when clicking on the "X" button
+closeModal.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+// Close the modal when clicking outside the image
+modal.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
 });
