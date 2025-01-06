@@ -1,79 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Booking</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Movie Gallery</h1>
-        <p>Explore movies, manage tickets, and more!</p>
-    </header>
+  <header>
+    <h1>Welcome to Cinema Booking</h1>
+    <nav>
+      <ul>
+        <li><a href="#"><img src="assets/images/home.png" alt="Home"> Home</a></li>
+        <li><a href="#"><img src="assets/images/now_showing.png" alt="Now Showing"> Now Showing</a></li>
+        <li><a href="#"><img src="assets/images/coming_soon.png" alt="Coming Soon"> Coming Soon</a></li>
+        <li><a href="#"><img src="assets/images/sign_in.png" alt="Sign In"> Sign In</a></li>
+        <li><a href="#"><img src="assets/images/sign_up.png" alt="Sign Up"> Sign Up</a></li>
+        <li><a href="#"><img src="assets/images/book_a_ticket.png" alt="Book a Ticket"> Book a Ticket</a></li>
+        <li><a href="#"><img src="assets/images/payment.png" alt="Payment"> Payment</a></li>
+        <li><a href="#"><img src="assets/images/statistical_report.png" alt="Report"> Report</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Gallery Section -->
-    <section class="gallery-container">
-        <!-- Each card with image and title -->
-        <div class="gallery-card">
-            <img src="assets/images/home.png" alt="Home" class="gallery-item">
-            <h3>Home</h3>
+  <main>
+    <section class="gallery">
+      <h2>Explore Movies</h2>
+      <div class="image-container">
+        <div class="gallery-item">
+          <img src="assets/images/book_a_seat.png" alt="Book a Seat">
+          <p>Book a Seat</p>
         </div>
-        <div class="gallery-card">
-            <img src="assets/images/now_showing.png" alt="Now Showing" class="gallery-item">
-            <h3>Now Showing</h3>
+        <div class="gallery-item">
+          <img src="assets/images/member_ship.png" alt="Membership">
+          <p>Membership</p>
         </div>
-        <div class="gallery-card">
-            <img src="assets/images/coming_soon.png" alt="Coming Soon" class="gallery-item">
-            <h3>Coming Soon</h3>
+        <div class="gallery-item">
+          <img src="assets/images/home_member.png" alt="Home Member">
+          <p>Home Member</p>
         </div>
-        <div class="gallery-card">
-            <img src="assets/images/sign_in.png" alt="Sign In" class="gallery-item">
-            <h3>Sign In</h3>
-        </div>
-        <div class="gallery-card">
-            <img src="assets/images/sign_up.png" alt="Sign Up" class="gallery-item">
-            <h3>Sign Up</h3>
-        </div>
-        <div class="gallery-card">
-            <img src="assets/images/home_member.png" alt="Home Member" class="gallery-item">
-            <h3>Home Member</h3>
-        </div>
-        <div class="gallery-card">
-            <img src="assets/images/member_ship.png" alt="Membership" class="gallery-item">
-            <h3>Membership</h3>
-        </div>
-        <div class="gallery-card">
-            <img src="assets/images/book_a_ticket.png" alt="Book a Ticket" class="gallery-item">
-            <h3>Book a Ticket</h3>
-        </div>
-        <div class="gallery-card">
-            <img src="assets/images/book_a_seat.png" alt="Book a Seat" class="gallery-item">
-            <h3>Book a Seat</h3>
-        </div>
-        <div class="gallery-card">
-            <img src="assets/images/payment.png" alt="Payment" class="gallery-item">
-            <h3>Payment</h3>
-        </div>
-        <div class="gallery-card">
-            <img src="assets/images/statistical_report.png" alt="Statistical Report" class="gallery-item">
-            <h3>Statistical Report</h3>
-        </div>
+        <!-- Add more images as needed -->
+      </div>
     </section>
+  </main>
 
-    <!-- Modal for image preview -->
-    <div id="modal" class="modal">
-        <span class="close">&times;</span>
-        <img id="modalImage" class="modal-content">
-        <div id="caption"></div>
-    </div>
+  <footer>
+    <p>&copy; 2024 Cinema Booking. All rights reserved.</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Movie Gallery. All rights reserved.</p>
-    </footer>
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
