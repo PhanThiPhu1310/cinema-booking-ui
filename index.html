@@ -12,26 +12,35 @@
     <nav>
       <ul>
         <li><a href="#"><img src="assets/images/home.png" alt="Home"> Home</a></li>
-         <li><a href="#"><img src="assets/images/home_member.png" alt="Home Member"> Home Member</a></li>
         <li><a href="#"><img src="assets/images/now_showing.png" alt="Now Showing"> Now Showing</a></li>
         <li><a href="#"><img src="assets/images/coming_soon.png" alt="Coming Soon"> Coming Soon</a></li>
         <li><a href="#"><img src="assets/images/sign_in.png" alt="Sign In"> Sign In</a></li>
         <li><a href="#"><img src="assets/images/sign_up.png" alt="Sign Up"> Sign Up</a></li>
-        <li><a href="#"><img src="assets/images/member_ship.png" alt="Membership"> Membership</a></li>
-        <li><a href="#"><img src="assets/images/book_a_seat.png" alt="Book a Seat"> Book a Seat</a></li>
         <li><a href="#"><img src="assets/images/book_a_ticket.png" alt="Book a Ticket"> Book a Ticket</a></li>
         <li><a href="#"><img src="assets/images/payment.png" alt="Payment"> Payment</a></li>
-        <li><a href="#"><img src="assets/images/statistical_report.png" alt="Statistical Report"> Statistical Report</a></li>
+        <li><a href="#"><img src="assets/images/statistical_report.png" alt="Report"> Report</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <p>Experience the best cinema booking service with us.</p>
+    <section class="gallery">
+      <h2>Explore Movies</h2>
+      <div class="image-container">
+        <img src="assets/images/book_a_seat.png" alt="Book a Seat" class="gallery-item">
+        <img src="assets/images/member_ship.png" alt="Membership" class="gallery-item">
+        <img src="assets/images/home_member.png" alt="Home Member" class="gallery-item">
+      </div>
+    </section>
   </main>
-
   <footer>
     <p>&copy; 2024 Cinema Booking. All rights reserved.</p>
   </footer>
+
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
