@@ -3,7 +3,7 @@ const modalImage = document.getElementById("modalImage");
 const captionText = document.getElementById("caption");
 const closeModal = document.querySelector(".close");
 
-const galleryItems = document.querySelectorAll(".gallery-item");
+const galleryItems = document.querySelectorAll(".gallery-item img");
 
 galleryItems.forEach((item) => {
   item.addEventListener("click", function () {
