@@ -50,25 +50,3 @@ nav ul li a {
   width: 100%;
   height333;
 }
-
-footer .social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 1rem;
-}
-
-footer .social-icons a {
-  font-size: 24px;
-  transition: transform 0.3s ease;
-}
-
-footer .social-icons a:hover {
-  transform: scale(1.2);
-}
-
-footer p {
-  margin-top: 1rem;
-  font-size: 12px;
-}
-
